@@ -41,6 +41,11 @@
             <artifactId>ticket-business</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.example.demo.springboot</groupId>
+            <artifactId>ticket-model</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
