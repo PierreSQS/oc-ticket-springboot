@@ -1,13 +1,14 @@
-package org.example.demo;
+package org.example.demo.springboot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TicketSpringbootApplication {
+public class TicketWebAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TicketSpringbootApplication.class, args);
+
+		SpringApplication.run(TicketWebAppApplication.class, args);
 	}
 
 }
