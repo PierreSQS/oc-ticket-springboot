@@ -18,7 +18,11 @@ public class SpringConfiguration {
 	
 	 @Bean(name="dataSourceTicket")
      public DataSource getDataSource(){
-		 return new DriverManagerDataSource();
+	 	DriverManagerDataSource ds = new DriverManagerDataSource();
+		 ds.setUrl("jdbc:postgresql://localhost:5432/db_ticket");
+		 ds.setUsername("ticket");
+		 ds.setPassword("ticket");
+		 return ds;
          
 	 }
 

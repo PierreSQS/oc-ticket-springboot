@@ -19,7 +19,7 @@ import java.util.List;
  * @author lgu
  */
 @RestController("/tickets")
-public class TicketController extends AbstractController {
+public class TicketController extends AbstractResource {
 
 
     /**

@@ -18,7 +18,7 @@ import java.util.List;
  * @author lgu
  */
 @RestController("/projects")
-public class ProjetController extends AbstractController {
+public class ProjetController extends AbstractResource {
 
     /**
      * Renvoie le {@link Projet} d'identifiant {@code pId}

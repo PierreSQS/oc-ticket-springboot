@@ -3,7 +3,7 @@ package org.example.demo.springboot.controllers;
 
 import org.example.demo.springboot.business.factory.contract.ManagerFactory;
 
-public class AbstractController {
+public class AbstractResource {
 	
 	private static ManagerFactory managerFactory;
 
