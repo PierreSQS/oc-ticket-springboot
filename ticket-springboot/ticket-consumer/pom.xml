@@ -28,10 +28,17 @@
             <scope>runtime</scope>
         </dependency>
 
+        <!-- ===== Sub-Modules dependencies ===== -->
         <dependency>
             <groupId>org.example.demo.springboot</groupId>
             <artifactId>ticket-model</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.example.demo.springboot</groupId>
+            <artifactId>ticket-technical</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

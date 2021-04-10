@@ -18,16 +18,16 @@
 
     <dependencies>
 
-        <!-- ===== Sub-Modules dependencies ===== -->
+        <!-- ===== SpringBoot dependencies ===== -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
+        <!-- ===== Sub-Modules dependencies ===== -->
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <optional>true</optional>
+            <groupId>org.example.demo.springboot</groupId>
+            <artifactId>ticket-technical</artifactId>
         </dependency>
 
     </dependencies>
