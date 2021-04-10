@@ -5,10 +5,7 @@ import org.example.demo.springboot.business.contract.TicketManager;
 import org.example.demo.springboot.model.bean.ticket.Ticket;
 import org.example.demo.springboot.model.exception.NotFoundException;
 import org.example.demo.springboot.model.recherche.ticket.RechercheTicket;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,7 +15,8 @@ import java.util.List;
  *
  * @author lgu
  */
-@RestController("/tickets")
+@RestController
+@RequestMapping("/tickets")
 public class TicketController extends AbstractResource {
 
 
@@ -30,7 +28,7 @@ public class TicketController extends AbstractResource {
      * @throws NotFoundException Si le {@link Ticket} n'a pas été trouvé
      */
 
-    @GetMapping("{numero}")
+    @GetMapping("{pNumero}")
     public Ticket get(@PathVariable Long pNumero) throws NotFoundException {
         TicketManager vTicketManager = getManagerFactory().getTicketManager();
         return vTicketManager.getTicket(pNumero);

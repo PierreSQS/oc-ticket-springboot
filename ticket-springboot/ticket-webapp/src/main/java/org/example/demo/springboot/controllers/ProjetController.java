@@ -6,6 +6,7 @@ import org.example.demo.springboot.model.exception.NotFoundException;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
@@ -17,7 +18,8 @@ import java.util.List;
  *
  * @author lgu
  */
-@RestController("/projects")
+@RestController
+@RequestMapping("/projets")
 public class ProjetController extends AbstractResource {
 
     /**
@@ -33,7 +35,7 @@ public class ProjetController extends AbstractResource {
      * Cet appel déclenche la méthode ci-dessus!!!! 
      */
 
-    @GetMapping("{id}")
+    @GetMapping("{pId}")
     public Projet get(@PathVariable Integer pId) throws NotFoundException {
         ProjetManager vProjetManager = getManagerFactory().getProjetManager();
         return vProjetManager.getProjet(pId);
