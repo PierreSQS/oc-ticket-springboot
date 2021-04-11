@@ -9,18 +9,23 @@ import org.springframework.test.web.servlet.MockMvc;
 import static  org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @WebMvcTest(controllers = {ProjetController.class})
 @ContextConfiguration(classes = {SpringConfiguration.class})
-public class ProjetControllerTest {
+class ProjetControllerTest {
 
     @Autowired
     MockMvc mockMvc;
 
     @Test
-    public void testProjetsRequest() throws Exception{
-        mockMvc.perform(get("/projets")).andDo(print());
-
+    void testProjetsRequest() throws Exception{
+        mockMvc.perform(get("/projets"))
+                .andExpect(status().isOk())
+                .andExpect(content().contentType("application/json"))
+                .andExpect(jsonPath("$[0].nom").value("Anneau"))
+                .andExpect(jsonPath("$[2].responsable.nom").value("Bracame"))
+                .andDo(print());
     }
 
 }
