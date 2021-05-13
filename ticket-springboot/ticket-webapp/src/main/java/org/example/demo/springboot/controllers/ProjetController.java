@@ -30,9 +30,8 @@ public class ProjetController extends AbstractResource {
      * @throws NotFoundException Si le {@link Projet} n'a pas été trouvé
      * 
      * Attention! l'appel qui déclenche la méthode ci-dessous est
-     * http://localhost:8080/ticket-webapp/projets/4 et non 
-     * http://localhost:8080/ticket-webapp/projets/?id=4. 
-     * Cet appel déclenche la méthode ci-dessus!!!! 
+     * http://localhost:8080/projets/4 et non
+     * http://localhost:8080/projets/?id=4.
      */
 
     @GetMapping("{pId}")
