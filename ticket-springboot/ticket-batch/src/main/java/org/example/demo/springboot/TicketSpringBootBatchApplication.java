@@ -8,6 +8,7 @@ import org.example.demo.springboot.model.exception.TechnicalException;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
 
@@ -28,6 +29,7 @@ import java.util.stream.Collectors;
  */
 @Slf4j
 @SpringBootApplication
+@ImportResource(locations = "classpath:org/example/demo/springboot/batch/batchContext.xml")
 public class TicketSpringBootBatchApplication {
 
     /**
