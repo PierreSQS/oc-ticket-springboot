@@ -1,4 +1,4 @@
-package org.example.demo.springboot.configuration;
+package org.example.demo.springboot.webapp.configuration;
 
 import javax.sql.DataSource;
 

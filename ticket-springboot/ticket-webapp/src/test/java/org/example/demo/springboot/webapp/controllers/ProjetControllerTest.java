@@ -1,6 +1,7 @@
-package org.example.demo.springboot.controllers;
+package org.example.demo.springboot.webapp.controllers;
 
-import org.example.demo.springboot.configuration.SpringConfiguration;
+import org.example.demo.springboot.webapp.configuration.SpringConfiguration;
+import org.example.demo.springboot.webapp.controllers.ProjetController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;

@@ -1,4 +1,4 @@
-package org.example.demo.springboot.controllers;
+package org.example.demo.springboot.webapp.controllers;
 
 import org.example.demo.springboot.business.contract.ProjetManager;
 import org.example.demo.springboot.model.bean.projet.Projet;
