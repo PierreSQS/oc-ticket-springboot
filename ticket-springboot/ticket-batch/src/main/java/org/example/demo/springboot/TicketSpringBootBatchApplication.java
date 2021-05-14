@@ -75,10 +75,10 @@ public class TicketSpringBootBatchApplication {
                     int beansCnt = appCtx.getBeanDefinitionCount();
                     log.info("Number of Beans: " + beansCnt);
 
-                    log.info("The created Beans... ");
+                    log.debug("The created Beans... ");
                     Arrays.asList(appCtx.getBeanDefinitionNames())
 //                            .stream().sorted()
-                            .forEach(log::info);
+                            .forEach(log::debug);
 
                 } else {
                     throw new TechnicalException("Traitement inconnu : " + vTraitementId);
